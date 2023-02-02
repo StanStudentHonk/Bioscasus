@@ -11,6 +11,7 @@ namespace BioscoopCasusSOA3.Models
 		private int _rowNr { get; set; }
 		private int _seatNr { get; set; }
 		private bool _isPremium { get; set; }
+		private MovieScreening _movieTicket { get; set; }
 
 		public MovieTicket(int rowNr, int seatNr, bool isPremium)
 		{
