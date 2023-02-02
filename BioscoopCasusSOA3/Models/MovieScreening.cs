@@ -8,7 +8,7 @@ namespace BioscoopCasusSOA3.Models
 {
     public class MovieScreening
     {
-        private DateTime _dateAndTime { get; set; }
+        public DateTime _dateAndTime { get; set; }
         private double _pricePerSeat { get;  set; }
         private Movie _movie { get; set; }
 
