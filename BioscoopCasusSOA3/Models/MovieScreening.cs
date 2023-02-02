@@ -22,10 +22,5 @@ namespace BioscoopCasusSOA3.Models
         {
             return _pricePerSeat;
         }
-
-        public override string ToString()
-        {
-            return _pricePerSeat + _dateAndTime.ToString();
-        }
     }
 }
