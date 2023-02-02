@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BioscoopCasusSOA3.Models
 {
-    enum TicketExportFormat
+    public enum TicketExportFormat
     {
         PLAINTEXT,
         JSON,
