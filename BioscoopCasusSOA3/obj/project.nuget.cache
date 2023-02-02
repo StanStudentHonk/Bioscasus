@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RPLz884ahjD/Sx3/N/xmUG+LRBVbmIjd9WBbUQO5fROSVzm2Uu/JjYMXzqaARf+Fgn/d7M6Pib/1lgYi6vtfvg==",
+  "dgSpecHash": "xp8DTtfNNPTVSKNQH4gGwfi5KqLGkd+5mBqKTz3Z7fuIU5+Uye51uVmEpbUG8SoCPIkdcMv5xZI5MSjhS8mlNw==",
   "success": true,
-  "projectFilePath": "C:\\Avans\\Jaar 3 SO&A3\\BioscoopCasusSOA3\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
+  "projectFilePath": "C:\\Users\\stanv\\Desktop\\SOA3\\BiosCasus\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Khalid\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.13\\microsoft.windowsdesktop.app.ref.6.0.13.nupkg.sha512",
-    "C:\\Users\\Khalid\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.13\\microsoft.netcore.app.ref.6.0.13.nupkg.sha512",
-    "C:\\Users\\Khalid\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.13\\microsoft.aspnetcore.app.ref.6.0.13.nupkg.sha512",
-    "C:\\Users\\Khalid\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.13\\microsoft.netcore.app.host.win-x64.6.0.13.nupkg.sha512"
+    "C:\\Users\\stanv\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.13\\microsoft.netcore.app.ref.6.0.13.nupkg.sha512"
   ],
   "logs": []
 }

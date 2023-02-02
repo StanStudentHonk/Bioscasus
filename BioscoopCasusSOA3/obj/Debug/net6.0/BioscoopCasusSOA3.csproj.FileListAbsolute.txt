@@ -1,0 +1,15 @@
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\bin\Debug\net6.0\BioscoopCasusSOA3.exe
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\bin\Debug\net6.0\BioscoopCasusSOA3.deps.json
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\bin\Debug\net6.0\BioscoopCasusSOA3.runtimeconfig.json
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\bin\Debug\net6.0\BioscoopCasusSOA3.dll
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\bin\Debug\net6.0\BioscoopCasusSOA3.pdb
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.csproj.AssemblyReference.cache
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.AssemblyInfoInputs.cache
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.AssemblyInfo.cs
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.csproj.CoreCompileInputs.cache
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.dll
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\refint\BioscoopCasusSOA3.dll
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.pdb
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.genruntimeconfig.cache
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\ref\BioscoopCasusSOA3.dll
