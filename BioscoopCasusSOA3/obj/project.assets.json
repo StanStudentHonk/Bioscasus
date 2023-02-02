@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\stanv\\.nuget\\packages\\": {}
+    "C:\\Users\\Khalid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stanv\\Desktop\\SOA3\\BiosCasus\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
+      "projectUniqueName": "C:\\Avans\\Jaar 3 SO&A3\\BioscoopCasusSOA3\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
       "projectName": "BioscoopCasusSOA3",
-      "projectPath": "C:\\Users\\stanv\\Desktop\\SOA3\\BiosCasus\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
-      "packagesPath": "C:\\Users\\stanv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stanv\\Desktop\\SOA3\\BiosCasus\\BioscoopCasusSOA3\\obj\\",
+      "projectPath": "C:\\Avans\\Jaar 3 SO&A3\\BioscoopCasusSOA3\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
+      "packagesPath": "C:\\Users\\Khalid\\.nuget\\packages\\",
+      "outputPath": "C:\\Avans\\Jaar 3 SO&A3\\BioscoopCasusSOA3\\BioscoopCasusSOA3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\stanv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Khalid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,7 +28,9 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/eMQnqW7SD4EssVGnc8iK9eaxFUx4Ar1Z5vPeOcfJFXPkUuwoVK/api": {},
+        "https://remote.asamco.com/nuget/nuget": {}
       },
       "frameworks": {
         "net6.0": {
@@ -51,13 +53,26 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
             "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[6.0.13, 6.0.13]"
           }
         ],
@@ -66,7 +81,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
