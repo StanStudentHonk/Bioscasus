@@ -40,5 +40,13 @@ namespace BioscoopCasusSOA3.Models
 			
 		}
 
+		public DayOfWeek GetDayOfWeekForMovieScreening()
+		{ 
+			foreach(MovieTicket movieTicket in _movieTickets) 
+			{ 
+			
+			}
+		}
+
 	}
 }
