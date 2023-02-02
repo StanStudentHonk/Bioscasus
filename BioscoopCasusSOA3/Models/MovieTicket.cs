@@ -15,16 +15,18 @@ namespace BioscoopCasusSOA3.Models
 		private int _seatNr { get; set; }
 		[JsonProperty]
 		private bool _isPremium { get; set; }
-		private MovieScreening _movieTicket { get; set; }
+		[JsonProperty]
+		public MovieScreening _movieScreening { get; set; }
 
-		public MovieTicket(int rowNr, int seatNr, bool isPremium)
+		public MovieTicket(int rowNr, int seatNr, bool isPremium, MovieScreening movieScreening)
 		{
-			this._rowNr = rowNr;
-			this._seatNr = seatNr;
-			this._isPremium = isPremium;
+			_rowNr = rowNr;
+			_seatNr = seatNr;
+			_isPremium = isPremium;
+			_movieScreening = movieScreening;
 		}
 
-        public bool IsPremiumTicket()
+		public bool IsPremiumTicket()
 		{
 			return this._isPremium;
 		}
