@@ -13,3 +13,5 @@ C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\refint\
 C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.pdb
 C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.genruntimeconfig.cache
 C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\ref\BioscoopCasusSOA3.dll
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\stanv\Desktop\SOA3\BiosCasus\BioscoopCasusSOA3\obj\Debug\net6.0\BioscoopCasusSOA3.csproj.CopyComplete

@@ -1,26 +1,69 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Newtonsoft.Json >= 13.0.2"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\Khalid\\.nuget\\packages\\": {}
+    "C:\\Users\\stanv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Avans\\Jaar 3 SO&A3\\BioscoopCasusSOA3\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
+      "projectUniqueName": "C:\\Users\\stanv\\Desktop\\SOA3\\BiosCasus\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
       "projectName": "BioscoopCasusSOA3",
-      "projectPath": "C:\\Avans\\Jaar 3 SO&A3\\BioscoopCasusSOA3\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
-      "packagesPath": "C:\\Users\\Khalid\\.nuget\\packages\\",
-      "outputPath": "C:\\Avans\\Jaar 3 SO&A3\\BioscoopCasusSOA3\\BioscoopCasusSOA3\\obj\\",
+      "projectPath": "C:\\Users\\stanv\\Desktop\\SOA3\\BiosCasus\\BioscoopCasusSOA3\\BioscoopCasusSOA3.csproj",
+      "packagesPath": "C:\\Users\\stanv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\stanv\\Desktop\\SOA3\\BiosCasus\\BioscoopCasusSOA3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Khalid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\stanv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,9 +71,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/eMQnqW7SD4EssVGnc8iK9eaxFUx4Ar1Z5vPeOcfJFXPkUuwoVK/api": {},
-        "https://remote.asamco.com/nuget/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -47,32 +88,25 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[6.0.13, 6.0.13]"
           }
         ],
@@ -81,7 +115,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
       }
     }
   }
