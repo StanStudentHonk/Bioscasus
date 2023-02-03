@@ -1,33 +1,15 @@
-variables:
-  NUGET_PATH: 'C:\Tools\Nuget\nuget.exe'
-  MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\msbuild.exe'
-  XUNIT_PATH: packages\xunit.runner.console.2.3.1\tools\net452
-  UNITTEST_FOLDER: '.\tests\CiCdExample.Tests\bin\Release\'
+image: mcr.microsoft.com/dotnet/core/sdk:5.0
 
 stages:
   - build
   - test
 
-build_job:
+build:
   stage: build
-  only:
-    - branches
   script:
-    - '& "$env:NUGET_PATH" restore'
-    - '& "$env:MSBUILD_PATH" /p:Configuration=Release /clp:ErrorsOnly'
-    - '& "$env:MSBUILD_PATH" src\CiCdExample\CiCdExample.csproj /p:DeployOnBuild=true /p:Configuration=Release /P:PublishProfile=FolderProfile.pubxml'
-  artifacts:
-    expire_in: 2 days
-    paths:
-      - '.\src\CiCdExample\bin\Release\Publish\'
-      - '$env:UNITTEST_FOLDER'
-      - '.\$env:XUNIT_PATH\*.*'
+    - dotnet build
 
-test_job:
+test:
   stage: test
-  only:
-    - branches
   script:
-    - '& "$env:XUNIT_PATH\xunit.console.exe" "$env:UNITTEST_FOLDER\CiCdExample.Tests.dll"'
-  dependencies:
-    - build_job
+    - dotnet test --filter TestCategory=Unit
