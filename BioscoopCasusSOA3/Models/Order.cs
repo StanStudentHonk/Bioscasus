@@ -35,15 +35,15 @@ namespace BioscoopCasusSOA3.Models
 		}
 
 
-		public double GetTotalPriceOfTickets(List<MovieTicket> movieTickets)
+		public double GetTotalPriceOfTickets()
 		{
 			double totalPrice = 0.0;
-			for (int i = 0; i < movieTickets.Count; i++)
+			for (int i = 0; i < _movieTickets.Count; i++)
 			{
-				MovieTicket movieTicket = movieTickets[i];
+				MovieTicket movieTicket = _movieTickets[i];
 				double ticketPrice = movieTicket.GetPrice();
 				DayOfWeek dayOfWeek = movieTicket._movieScreening._dateAndTime.DayOfWeek;
-				if (i % 2 == 1 || !this._isStudentOrder && !(dayOfWeek >= DayOfWeek.Monday && dayOfWeek <= DayOfWeek.Thursday))
+				if (i % 2 == 0 || !this._isStudentOrder && !(dayOfWeek >= DayOfWeek.Monday && dayOfWeek <= DayOfWeek.Thursday))
 				{
 					if (movieTicket.IsPremiumTicket())
 					{
