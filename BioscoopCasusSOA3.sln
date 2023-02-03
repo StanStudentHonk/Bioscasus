@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioscoopCasusSOA3", "BioscoopCasusSOA3\BioscoopCasusSOA3.csproj", "{B38859CC-1916-44DE-9B37-8EDFA42CC532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BioscoopCasusSOA3", "BioscoopCasusSOA3\BioscoopCasusSOA3.csproj", "{B38859CC-1916-44DE-9B37-8EDFA42CC532}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A26F933C-3AE9-4B52-A742-D12DE983A548}"
+	ProjectSection(SolutionItems) = preProject
+		.gitlab-ci.yml = .gitlab-ci.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
