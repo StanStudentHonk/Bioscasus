@@ -4,12 +4,17 @@ on:
   pull_request:
   push:
     branches:
-      - master
+      - main
+      - 'releases/*'
+
 jobs:
   qodana:
     runs-on: ubuntu-latest
     steps:
-     - name: 'Qodana Scan'
-       uses: JetBrains/qodana-action@main
-       env:
-         QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 'Qodana Scan'
+        uses: JetBrains/qodana-action@v2022.3.2
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
