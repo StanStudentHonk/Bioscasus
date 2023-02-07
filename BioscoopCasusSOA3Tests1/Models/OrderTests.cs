@@ -25,6 +25,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 			var movieTicket5 = new MovieTicket(1, 5, isPremium, movieScreening);
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new StudentPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket3);
@@ -53,6 +54,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 			var movieTicket5 = new MovieTicket(1, 5, isPremium, movieScreening);
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new StudentPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket3);
@@ -80,6 +82,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 			var movieTicket5 = new MovieTicket(1, 5, isPremium, movieScreening);
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new RegularPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket3);
@@ -107,6 +110,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 			var movieTicket5 = new MovieTicket(1, 5, isPremium, movieScreening);
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new RegularPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket3);
@@ -134,6 +138,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 			var movieTicket5 = new MovieTicket(1, 5, isPremium, movieScreening);
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new RegularPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket3);
@@ -161,6 +166,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 			var movieTicket5 = new MovieTicket(1, 5, isPremium, movieScreening);
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new RegularPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket3);
@@ -187,6 +193,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 			
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new StudentPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 			
@@ -211,6 +218,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new StudentPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket1);
 
@@ -234,6 +242,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new RegularPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 
@@ -258,6 +267,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new RegularPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket1);
 
@@ -282,6 +292,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new RegularPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket1);
 			order.AddSeatReservations(movieTicket2);
 
@@ -306,6 +317,7 @@ namespace BioscoopCasusSOA3.Models.Tests
 
 
 			var order = new Order(69420, isStudentOrder);
+			order.SetPriceCalculatorStrategy(new RegularPriceCalculatorStrategy());
 			order.AddSeatReservations(movieTicket2);
 			order.AddSeatReservations(movieTicket1);
 
