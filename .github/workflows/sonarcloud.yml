@@ -35,6 +35,6 @@ jobs:
       with:
         sonarcloud.organization: stanstudenthonk
         sonarcloud.projectKey: StanStudentHonk_Bioscasus
-        sonarcloud.token: ${{ secrets.SONARCLOUD_TOKEN }}
+        sonarcloud.token: c6fe42689ca10dc0cc5a9e9a8379131be9da830d
         sonarcloud.scanner.projectBaseDir: ${{ env.GITHUB_WORKSPACE }}
         sonarcloud.scanner.testExecutionReportPaths: "**/TestResults/*.trx"
