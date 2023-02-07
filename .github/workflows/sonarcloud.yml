@@ -30,11 +30,15 @@ jobs:
     - name: Run tests
       run: dotnet test --no-build --configuration Release
 
-    - name: Upload test results to SonarCloud
-      uses: sonarsource/sonarcloud-github-action@master
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
       with:
-        sonarcloud.organization: stanstudenthonk
-        sonarcloud.projectKey: StanStudentHonk_Bioscasus
-        sonarcloud.token: c6fe42689ca10dc0cc5a9e9a8379131be9da830d
-        sonarcloud.scanner.projectBaseDir: ${{ env.GITHUB_WORKSPACE }}
-        sonarcloud.scanner.testExecutionReportPaths: "**/TestResults/*.trx"
+        # Disabling shallow clone is recommended for improving relevancy of reporting
+        fetch-depth: 0
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
