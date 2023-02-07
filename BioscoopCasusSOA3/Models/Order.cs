@@ -1,10 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BioscoopCasusSOA3.Models
 {
@@ -52,26 +47,6 @@ namespace BioscoopCasusSOA3.Models
 
 		public double GetTotalPriceOfTickets()
 		{
-			//double totalPrice = 0.0;
-			//for (int i = 0; i < _movieTickets.Count; i++)
-			//{
-			//	MovieTicket movieTicket = _movieTickets[i];
-			//	double ticketPrice = movieTicket.GetPrice();
-			//	DayOfWeek dayOfWeek = movieTicket._movieScreening._dateAndTime.DayOfWeek;
-			//	if (i % 2 == 0 || !this._isStudentOrder && !(dayOfWeek >= DayOfWeek.Monday && dayOfWeek <= DayOfWeek.Thursday))
-			//	{
-			//		if (movieTicket.IsPremiumTicket())
-			//		{
-			//			ticketPrice += this._isStudentOrder ? 2 : 3;
-			//		}
-			//		totalPrice += ticketPrice;
-			//	}
-			//}
-			//if (!this._isStudentOrder)
-			//{
-			//	totalPrice = this._movieTickets.Count > 5 ? totalPrice += 0.9 : totalPrice;
-			//}
-			//return totalPrice;
 			return PriceCalculatorStrategy.GetTotalPriceOfTickets(_movieTickets);
 		}
 
