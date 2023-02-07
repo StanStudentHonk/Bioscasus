@@ -3,6 +3,7 @@ image: mcr.microsoft.com/dotnet/sdk:6.0
 stages:
   - build
   - test
+  - analyze
 
 build:
   stage: build
@@ -13,3 +14,11 @@ test:
   stage: test
   script:
     - dotnet test
+
+analyze:
+  stage: analyze
+  script:
+    - dotnet tool install --global dotnet-sonarscanner
+    - dotnet sonarscanner begin /k:"StanStudentMan_soabioscasus" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="9c898d7559bc1da1c44abee2e62e331f523d5525"
+    - dotnet build
+    - dotnet sonarscanner end
