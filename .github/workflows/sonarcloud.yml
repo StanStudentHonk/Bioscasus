@@ -19,7 +19,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 6.0.x
 
     - name: Restore dependencies
       run: dotnet restore
@@ -31,7 +31,7 @@ jobs:
       run: dotnet test --no-build --configuration Release
 
     - name: Upload test results to SonarCloud
-      uses: sonarsource/sonarcloud-github-action@v1
+      uses: sonarsource/sonarcloud-github-action@master
       with:
         sonarcloud.organization: stanstudenthonk
         sonarcloud.projectKey: StanStudentHonk_Bioscasus
