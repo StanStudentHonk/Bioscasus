@@ -1,9 +1,13 @@
 image: mcr.microsoft.com/dotnet/sdk:6.0
 
+variables:
+   SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"
+   GIT_DEPTH: "0" 
+
 stages:
   - build
   - test
-  - analyze
+  - sonarcloud-check
 
 build:
   stage: build
@@ -15,10 +19,17 @@ test:
   script:
     - dotnet test
 
-analyze:
-  stage: analyze
+sonarcloud-check:
+  image:
+    name: sonarsource/sonar-scanner-cli:latest
+    entrypoint: [""]
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
   script:
-    - dotnet tool install --global dotnet-sonarscanner
-    - dotnet sonarscanner begin /k:"StanStudentMan_soabioscasus" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="9c898d7559bc1da1c44abee2e62e331f523d5525"
-    - dotnet build
-    - dotnet sonarscanner end
+    - sonar-scanner
+  only:
+    - merge_requests
+    - master
+    - develop
