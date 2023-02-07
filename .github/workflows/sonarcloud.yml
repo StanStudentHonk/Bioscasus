@@ -3,7 +3,7 @@ name: .NET Tests and SonarCloud
 on:
   push:
     branches:
-      - main
+      - master
 
 env:
   DOTNET_CLI_TELEMETRY_OPTOUT: 1
