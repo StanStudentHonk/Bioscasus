@@ -7,10 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BioscoopCasusSOA3", "Biosco
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A26F933C-3AE9-4B52-A742-D12DE983A548}"
 	ProjectSection(SolutionItems) = preProject
-		.gitlab-ci.yml = .gitlab-ci.yml
+		code_quility.yml = code_quility.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioscoopCasusSOA3Testsen", "BioscoopCasusSOA3Tests1\BioscoopCasusSOA3Testsen.csproj", "{2030B45D-335B-47B9-8DA5-FCDDCA1F70C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BioscoopCasusSOA3Testsen", "BioscoopCasusSOA3Tests1\BioscoopCasusSOA3Testsen.csproj", "{2030B45D-335B-47B9-8DA5-FCDDCA1F70C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
